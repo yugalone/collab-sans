@@ -226,6 +226,18 @@
       padding: 0 20px 80px;
     }
 
+    /* Clean typography & elevated underline spacing */
+    a, u, .underline {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: var(--text-muted);
+      transition: text-decoration-color 0.15s ease, color 0.15s ease;
+    }
+    a:hover {
+      text-decoration-color: var(--text);
+    }
+
     .container {
       max-width: 840px;
       margin: 0 auto;
@@ -237,7 +249,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--border);
       margin-bottom: 56px;
     }
 
@@ -318,7 +329,6 @@
       font-size: 0.88rem;
       color: var(--text-muted);
       padding-top: 16px;
-      border-top: 1px dashed var(--border);
     }
     .hero-meta strong {
       color: var(--text);
@@ -326,21 +336,9 @@
 
     /* Story Section: The Inter Obsession & Antigravity */
     .story-card {
-      background: var(--bg-subtle);
-      border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 32px 36px;
       margin-bottom: 48px;
-    }
-
-    .story-title {
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      margin-bottom: 14px;
-      letter-spacing: 0.05em;
-      font-size: 0.78rem;
-      color: var(--text-muted);
     }
 
     .story-body {
@@ -557,7 +555,6 @@
 
     /* Footer */
     footer.site-footer {
-      border-top: 1px solid var(--border);
       padding-top: 32px;
       display: flex;
       justify-content: space-between;
@@ -570,7 +567,6 @@
 
     footer a {
       color: inherit;
-      text-decoration: underline;
     }
 
     @media (max-width: 680px) {
@@ -627,10 +623,9 @@
 
     <!-- Origin Story: The Inter Obsession & Antigravity -->
     <section class="story-card">
-      <div class="story-title">Origin</div>
       <div class="story-body">
         <p>
-          I am not a professional developer or traditional type designer. My background is rooted in organizational systems, finance, and building scalable enterprise workflows as a citizen developer (<a href="https://yugal.one" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">yugal.one</a>). For me, <strong>minimalism is not a design preference—it is a way of living and working</strong>: stripping away noise so function and clarity become obvious.
+          I am not a professional developer or traditional type designer. My background is rooted in organizational systems, finance, and building scalable enterprise workflows as a citizen developer (<a href="https://yugal.one" target="_blank" rel="noopener">yugal.one</a>). For me, <strong>minimalism is not a design preference—it is a way of living and working</strong>: stripping away noise so function and clarity become obvious.
         </p>
         <p>
           That obsession with clarity drew me directly to Rasmus Andersson’s <strong>Inter</strong>—the undisputed benchmark of modern digital interface typography. But across product interfaces, data dashboards, and mobile surfaces, I felt a recurring void: I wanted the mathematical precision and micro-legibility of Inter, but with the warmth, friendliness, and understated minimalism that only genuinely rounded terminals can bring.
