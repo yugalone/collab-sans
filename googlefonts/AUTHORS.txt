@@ -1,0 +1,4 @@
+# This is the official list of Collab Sans project authors for copyright purposes.
+
+Yugal <yugalone@users.noreply.github.com>
+The Collab Sans Project Authors

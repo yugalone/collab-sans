@@ -1,0 +1,36 @@
+{
+  "name": "@yugal/collab-sans",
+  "version": "1.0.0",
+  "description": "Collab Sans — A precision-rounded neo-grotesque font family derived from Inter across 18 styles",
+  "main": "collab-sans.css",
+  "style": "collab-sans.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yugalone/collab-sans.git"
+  },
+  "keywords": [
+    "font",
+    "typeface",
+    "inter",
+    "rounded",
+    "webfont",
+    "grotesque",
+    "opentype",
+    "truetype",
+    "woff2",
+    "collab-sans"
+  ],
+  "author": "Yugal",
+  "license": "OFL-1.1",
+  "bugs": {
+    "url": "https://github.com/yugalone/collab-sans/issues"
+  },
+  "homepage": "https://yugal.one/collab-sans",
+  "files": [
+    "fonts/",
+    "collab-sans.css",
+    "collab.css",
+    "OFL.txt",
+    "README.md"
+  ]
+}

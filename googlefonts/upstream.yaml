@@ -1,0 +1,24 @@
+name: Collab Sans
+repository: https://github.com/yugalone/collab-sans
+branch: main
+archive: https://github.com/yugalone/collab-sans/releases/download/v1.000/CollabSans-Font-Family.zip
+files:
+  fonts/ttf:
+    - CollabSans-Thin.ttf
+    - CollabSans-ThinItalic.ttf
+    - CollabSans-ExtraLight.ttf
+    - CollabSans-ExtraLightItalic.ttf
+    - CollabSans-Light.ttf
+    - CollabSans-LightItalic.ttf
+    - CollabSans-Regular.ttf
+    - CollabSans-Italic.ttf
+    - CollabSans-Medium.ttf
+    - CollabSans-MediumItalic.ttf
+    - CollabSans-SemiBold.ttf
+    - CollabSans-SemiBoldItalic.ttf
+    - CollabSans-Bold.ttf
+    - CollabSans-BoldItalic.ttf
+    - CollabSans-ExtraBold.ttf
+    - CollabSans-ExtraBoldItalic.ttf
+    - CollabSans-Black.ttf
+    - CollabSans-BlackItalic.ttf

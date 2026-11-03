@@ -1,0 +1,5 @@
+# Contributors to the Collab Sans font family project.
+
+Yugal <yugalone@users.noreply.github.com> (Maintainer, Type Engineering & Rounded Derivatives)
+Rasmus Andersson <rasmus@notion.se> (Original Inter typeface design & engineering)
+The Inter Project Authors (https://github.com/rsms/inter)

@@ -1,0 +1,182 @@
+/* Collab Sans — Complete Webfont Stylesheet (Weights 100–900, Normal & Italic) */
+/* Licensed under SIL Open Font License 1.1 */
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-Thin.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-Thin.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-ThinItalic.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-ThinItalic.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-ExtraLight.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-ExtraLight.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-ExtraLightItalic.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-ExtraLightItalic.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-Light.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-Light.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-LightItalic.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-LightItalic.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-Regular.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-Regular.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-Italic.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-Italic.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-Medium.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-Medium.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-MediumItalic.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-MediumItalic.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-SemiBold.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-SemiBold.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-SemiBoldItalic.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-SemiBoldItalic.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-Bold.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-Bold.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-BoldItalic.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-BoldItalic.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-ExtraBold.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-ExtraBold.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-ExtraBoldItalic.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-ExtraBoldItalic.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-Black.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-Black.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./fonts/woff2/CollabSans-BlackItalic.woff2') format('woff2'),
+       url('./fonts/otf/CollabSans-BlackItalic.otf') format('opentype'),
+       url('./fonts/ttf/CollabSans-BlackItalic.ttf') format('truetype');
+}

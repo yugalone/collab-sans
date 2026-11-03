@@ -1,0 +1,10 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.pyc
+__pycache__/
+build/
+dist/
+/tmp/

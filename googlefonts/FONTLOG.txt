@@ -1,0 +1,44 @@
+FONTLOG for the Collab Sans font family
+
+This file provides detailed information on the Collab Sans Font Software.
+This information should be distributed along with the Collab Sans fonts
+and any derivative works.
+
+Basic Font Information
+----------------------
+Collab Sans is a rounded neo-grotesque typeface family derived from Rasmus
+Andersson's open-source typeface "Inter". Collab Sans features tangent-continuous
+semicircular stroke terminals (R = 0.50 * W), adaptive sub-contour scaling for
+diacritics and punctuation, and ink-trap preserved concave fillets (R = 0.14 * W)
+across all 18 styles (9 weights from Thin to Black, with matching true italics).
+
+Collab Sans was created by Yugal with Antigravity to establish a warm, friendly,
+and minimalist brand identity complementing the "Collab" ecosystem (https://yugal.one)
+while maintaining the legendary optical clarity and comprehensive glyph coverage of Inter.
+
+ChangeLog
+---------
+2026-11-01 (Yugal) Collab Sans Version 1.000
+- Initial open-source release as Collab Sans.
+- Derived from Inter with complete geometric rounding engine built with Antigravity.
+- First open-source release of Collab Sans with Reserved Font Name "Collab Sans"
+  to ensure full trademark compliance and Google Fonts readiness.
+- 18 styles generated in TrueType (.ttf), OpenType CFF (.otf), and WOFF2 (.woff2).
+- Full glyph coverage of 2,548 glyphs with complete OpenType layout features
+  (GPOS, GSUB, kerning, tnum, cv01-cv11, ss01-ss04).
+
+Acknowledgements
+----------------
+If you make modifications be sure to add your name (N), email (E), web-address
+(if you have one) and a description (D) of the contribution to the CONTRIBUTORS.txt
+file.
+
+N: Yugal
+E: yugalone@users.noreply.github.com
+W: https://github.com/yugalone/collab-sans
+D: Maintainer, Type Engineering & Rounded Derivatives
+
+N: Rasmus Andersson
+E: rasmus@notion.se
+W: https://rsms.me/
+D: Original Inter typeface design & engineering

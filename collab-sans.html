@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collab Sans — An Open-Source Rounded Derivative of Inter</title>
+  <meta name="description" content="Collab Sans is a clean, warm neo-grotesque rounded typeface family derived from Inter across 18 styles. Built by Yugal with Antigravity under the SIL Open Font License.">
+
+  <!-- Google Material Symbols Rounded (Minimalist UI Icons) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,0,0" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       Collab Sans Webfonts (18 Styles: Weights 100–900, Normal & Italic)
+       ========================================================================== */
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: normal;
+      font-weight: 100;
+      font-display: swap;
+      src: local('Collab Sans Thin'), local('CollabSans-Thin'),
+           url('./fonts/woff2/CollabSans-Thin.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-Thin.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: italic;
+      font-weight: 100;
+      font-display: swap;
+      src: local('Collab Sans Thin Italic'), local('CollabSans-ThinItalic'),
+           url('./fonts/woff2/CollabSans-ThinItalic.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-ThinItalic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: normal;
+      font-weight: 200;
+      font-display: swap;
+      src: local('Collab Sans ExtraLight'), local('CollabSans-ExtraLight'),
+           url('./fonts/woff2/CollabSans-ExtraLight.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-ExtraLight.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: italic;
+      font-weight: 200;
+      font-display: swap;
+      src: local('Collab Sans ExtraLight Italic'), local('CollabSans-ExtraLightItalic'),
+           url('./fonts/woff2/CollabSans-ExtraLightItalic.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-ExtraLightItalic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local('Collab Sans Light'), local('CollabSans-Light'),
+           url('./fonts/woff2/CollabSans-Light.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-Light.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: local('Collab Sans Light Italic'), local('CollabSans-LightItalic'),
+           url('./fonts/woff2/CollabSans-LightItalic.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-LightItalic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Collab Sans Regular'), local('Collab Sans'), local('CollabSans-Regular'), local('Collab'),
+           url('./fonts/woff2/CollabSans-Regular.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-Regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Collab Sans Italic'), local('CollabSans-Italic'),
+           url('./fonts/woff2/CollabSans-Italic.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-Italic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local('Collab Sans Medium'), local('CollabSans-Medium'),
+           url('./fonts/woff2/CollabSans-Medium.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-Medium.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: italic;
+      font-weight: 500;
+      font-display: swap;
+      src: local('Collab Sans Medium Italic'), local('CollabSans-MediumItalic'),
+           url('./fonts/woff2/CollabSans-MediumItalic.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-MediumItalic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: local('Collab Sans SemiBold'), local('CollabSans-SemiBold'),
+           url('./fonts/woff2/CollabSans-SemiBold.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-SemiBold.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: italic;
+      font-weight: 600;
+      font-display: swap;
+      src: local('Collab Sans SemiBold Italic'), local('CollabSans-SemiBoldItalic'),
+           url('./fonts/woff2/CollabSans-SemiBoldItalic.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-SemiBoldItalic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local('Collab Sans Bold'), local('CollabSans-Bold'),
+           url('./fonts/woff2/CollabSans-Bold.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-Bold.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: italic;
+      font-weight: 700;
+      font-display: swap;
+      src: local('Collab Sans Bold Italic'), local('CollabSans-BoldItalic'),
+           url('./fonts/woff2/CollabSans-BoldItalic.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-BoldItalic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: local('Collab Sans ExtraBold'), local('CollabSans-ExtraBold'),
+           url('./fonts/woff2/CollabSans-ExtraBold.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-ExtraBold.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: italic;
+      font-weight: 800;
+      font-display: swap;
+      src: local('Collab Sans ExtraBold Italic'), local('CollabSans-ExtraBoldItalic'),
+           url('./fonts/woff2/CollabSans-ExtraBoldItalic.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-ExtraBoldItalic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: local('Collab Sans Black'), local('CollabSans-Black'),
+           url('./fonts/woff2/CollabSans-Black.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-Black.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Collab Sans';
+      font-style: italic;
+      font-weight: 900;
+      font-display: swap;
+      src: local('Collab Sans Black Italic'), local('CollabSans-BlackItalic'),
+           url('./fonts/woff2/CollabSans-BlackItalic.woff2') format('woff2'),
+           url('./fonts/ttf/CollabSans-BlackItalic.ttf') format('truetype');
+    }
+
+    /* ==========================================================================
+       Minimalist Design System (Inspired by yugal.one & Modern Zinc Aesthetics)
+       ========================================================================== */
+    :root {
+      --bg: #ffffff;
+      --bg-subtle: #fafafa;
+      --bg-surface: #f4f4f5;
+      --bg-hover: #e4e4e7;
+      --text: #09090b;
+      --text-muted: #71717a;
+      --border: #e4e4e7;
+      --border-dark: #27272a;
+      --accent: #09090b;
+      --accent-contrast: #ffffff;
+      --font-display: 'Collab Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --radius: 8px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #09090b;
+      --bg-subtle: #121215;
+      --bg-surface: #1c1c20;
+      --bg-hover: #27272a;
+      --text: #fafafa;
+      --text-muted: #a1a1aa;
+      --border: #242428;
+      --accent: #fafafa;
+      --accent-contrast: #09090b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-display);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      padding: 0 20px 80px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    /* Minimal Navigation */
+    header.site-header {
+      padding: 36px 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 56px;
+    }
+
+    .brand-link {
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .brand-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-by {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .theme-toggle {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 6px 8px;
+      cursor: pointer;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+    }
+    .theme-toggle:hover {
+      background: var(--bg-surface);
+    }
+
+    .pill-link {
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      transition: background 0.15s ease;
+    }
+    .pill-link:hover {
+      background: var(--bg-surface);
+    }
+
+    /* Hero */
+    .hero {
+      margin-bottom: 48px;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .hero-lead {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      line-height: 1.55;
+      margin-bottom: 24px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      padding-top: 16px;
+      border-top: 1px dashed var(--border);
+    }
+    .hero-meta strong {
+      color: var(--text);
+    }
+
+    /* Story Section: The Inter Obsession & Antigravity */
+    .story-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      margin-bottom: 48px;
+    }
+
+    .story-title {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .story-body {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .story-body p strong {
+      font-weight: 600;
+    }
+
+    .note-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: var(--bg-hover);
+      color: var(--text);
+      vertical-align: middle;
+    }
+
+    /* The Uncrowded Type Tester */
+    .tester-container {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 48px;
+    }
+
+    .tester-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+
+    .weight-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .wpill {
+      font-family: inherit;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .wpill:hover {
+      color: var(--text);
+      background: var(--bg-surface);
+    }
+    .wpill.active {
+      color: var(--accent-contrast);
+      background: var(--accent);
+    }
+
+    .tool-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .size-slider-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .size-slider-wrap input[type="range"] {
+      width: 90px;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .btn-toggle {
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 5px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+    }
+    .btn-toggle.active {
+      background: var(--accent);
+      color: var(--accent-contrast);
+      border-color: var(--accent);
+    }
+
+    /* Editable Canvas */
+    .editable-canvas {
+      width: 100%;
+      min-height: 140px;
+      outline: none;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      padding: 12px 4px;
+      word-break: break-word;
+    }
+
+    .sample-chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      padding-top: 16px;
+      border-top: 1px dashed var(--border);
+      margin-top: 16px;
+    }
+
+    .schip {
+      font-family: inherit;
+      font-size: 0.78rem;
+      padding: 3px 9px;
+      border-radius: 9999px;
+      background: var(--bg-surface);
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+    .schip:hover {
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    /* Clean Waterfall */
+    .waterfall-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .wf-row {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      align-items: baseline;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    .wf-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .wf-tag {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .wf-line {
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      font-size: 26px;
+    }
+
+    /* How to Use / Code Snippet */
+    .embed-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .embed-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .embed-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .code-box {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 16px;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text);
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 680px) {
+      .wf-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+      .tester-controls {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .tool-group {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .story-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Top Navigation -->
+    <header class="site-header">
+      <a href="https://yugal.one" class="brand-link">
+        <span class="brand-name">Collab Sans</span>
+        <span class="brand-by">• yugal.one</span>
+      </a>
+      <div class="header-actions">
+        <a href="https://github.com/yugalone/collab-sans" target="_blank" rel="noopener" class="pill-link">GitHub</a>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme" aria-label="Toggle Dark Mode">
+          <span class="material-symbols-rounded" id="themeIcon" style="font-size: 18px;">dark_mode</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-eyebrow">
+        <span>SIL Open Font License 1.1</span>
+        <span>•</span>
+        <span>Derived from Inter</span>
+      </div>
+      <h1 class="hero-title">
+        Inter’s optical rigor,<br>softened into warmth.
+      </h1>
+      <p class="hero-lead">
+        <strong>Collab Sans</strong> is a clean, rounded neo-grotesque typeface family across 18 styles (9 weights from Thin to Black, with matching true italics). Semicircular tangent caps meet proportional concave fillets.
+      </p>
+      <div class="hero-meta">
+        <div>Styles: <strong>18 (9 Upright + 9 Italic)</strong></div>
+        <div>Glyphs: <strong>2,548 per font</strong></div>
+        <div>Formats: <strong>TTF, OTF, WOFF2</strong></div>
+        <div>License: <strong>SIL OFL 1.1 (Free for Personal &amp; Commercial)</strong></div>
+      </div>
+    </section>
+
+    <!-- Origin Story: The Inter Obsession & Antigravity -->
+    <section class="story-card">
+      <div class="story-title">Origin &amp; Architecture</div>
+      <div class="story-body">
+        <p>
+          I am not a professional developer or traditional type designer. My background is rooted in organizational systems, finance, and building scalable enterprise workflows as a citizen developer (<a href="https://yugal.one" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">yugal.one</a>). For me, <strong>minimalism is not a design preference—it is a way of living and working</strong>: stripping away noise so function and clarity become obvious.
+        </p>
+        <p>
+          That obsession with clarity drew me directly to Rasmus Andersson’s <strong>Inter</strong>—the undisputed benchmark of modern digital interface typography. But across product interfaces, data dashboards, and mobile surfaces, I felt a recurring void: I wanted the mathematical precision and micro-legibility of Inter, but with the warmth, friendliness, and understated minimalism that only genuinely rounded terminals can bring.
+        </p>
+        <p>
+          Rather than drawing outlines by hand, I built this entire font family using <strong>Antigravity</strong> (Google's agentic AI coding environment). Together, we engineered an algorithmic geometry engine in Python that traversed Inter's 2,548 glyphs contour-by-contour:
+        </p>
+        <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+          <li><strong>Tangent-Continuous Semicircular Terminals:</strong> Curving stroke ends with exact circular caps ($R = 0.50 \times W$) across horizontal, vertical, and $9.4^\circ$ italic terminals.</li>
+          <li><strong>Ink-Trap Preserved Fillets:</strong> Applying proportional inner fillets ($R = 0.14 \times W$) to prevent ink clogging and optical muddiness at small 11px–14px UI sizes.</li>
+          <li><strong>Zero Feature Compromise:</strong> Retaining every kerning pair, tabular figure (`tnum`), slashed zero, fraction, and stylistic set from the original Inter.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Clean, Uncrowded Type Tester -->
+    <section class="tester-container">
+      <div class="tester-controls">
+        <div class="weight-pills" id="weightPills">
+          <button class="wpill" data-weight="100" onclick="setWeight(100)">100</button>
+          <button class="wpill" data-weight="200" onclick="setWeight(200)">200</button>
+          <button class="wpill" data-weight="300" onclick="setWeight(300)">300</button>
+          <button class="wpill active" data-weight="400" onclick="setWeight(400)">400</button>
+          <button class="wpill" data-weight="500" onclick="setWeight(500)">500</button>
+          <button class="wpill" data-weight="600" onclick="setWeight(600)">600</button>
+          <button class="wpill" data-weight="700" onclick="setWeight(700)">700</button>
+          <button class="wpill" data-weight="800" onclick="setWeight(800)">800</button>
+          <button class="wpill" data-weight="900" onclick="setWeight(900)">900</button>
+        </div>
+
+        <div class="tool-group">
+          <div class="size-slider-wrap">
+            <span>Size</span>
+            <input type="range" id="sizeSlider" min="20" max="96" value="48" oninput="setSize(this.value)">
+            <span id="sizeVal" style="font-family: var(--font-mono); width: 36px;">48px</span>
+          </div>
+          <button class="btn-toggle" id="italicToggle" onclick="toggleItalic()">Italic</button>
+        </div>
+      </div>
+
+      <!-- Live Canvas -->
+      <div class="editable-canvas" id="canvas" contenteditable="true" spellcheck="false">
+        Clarity over noise, intent over decoration, function over abstraction.
+      </div>
+
+      <!-- Quick Text Presets -->
+      <div class="sample-chips">
+        <span style="font-size: 0.78rem; color: var(--text-muted); align-self: center;">Try:</span>
+        <button class="schip" onclick="setText('Clarity over noise, intent over decoration, function over abstraction.')">Manifesto</button>
+        <button class="schip" onclick="setText('Sphinx of black quartz, judge my vow. 1234567890')">Pangram</button>
+        <button class="schip" onclick="setText('Quarterly Revenue: $1,489,200 (+18.4% YoY) • SLA: 99.98%')">Metrics &amp; Figures</button>
+        <button class="schip" onclick="setText('ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789')">Alphabet</button>
+      </div>
+    </section>
+
+    <!-- Waterfall Scale -->
+    <section class="waterfall-card">
+      <div class="wf-row">
+        <span class="wf-tag">100 Thin</span>
+        <div class="wf-line" style="font-weight: 100;">Every complex system began as a simple system that worked.</div>
+      </div>
+      <div class="wf-row">
+        <span class="wf-tag">300 Light</span>
+        <div class="wf-line" style="font-weight: 300;">Minimalism is not a design preference—it is a way of living.</div>
+      </div>
+      <div class="wf-row">
+        <span class="wf-tag">400 Regular</span>
+        <div class="wf-line" style="font-weight: 400;">Balancing clean, accessible design with enterprise governance.</div>
+      </div>
+      <div class="wf-row">
+        <span class="wf-tag">600 SemiBold</span>
+        <div class="wf-line" style="font-weight: 600;">Tangent-continuous terminals with preserved optical ink-traps.</div>
+      </div>
+      <div class="wf-row">
+        <span class="wf-tag">800 ExtraBold</span>
+        <div class="wf-line" style="font-weight: 800;">Derived from Inter, engineered with Antigravity.</div>
+      </div>
+      <div class="wf-row">
+        <span class="wf-tag">900 Black</span>
+        <div class="wf-line" style="font-weight: 900;">Maximum punch and friendly human authority.</div>
+      </div>
+    </section>
+
+    <!-- Quick Web Usage / Google Sites -->
+    <section class="embed-card">
+      <h2 class="embed-title">Use Collab Sans on the Web</h2>
+      <p class="embed-desc">Self-host with CSS or link directly in your web applications.</p>
+      <div class="code-box">
+<pre><code>/* Include in your CSS */
+@font-face {
+  font-family: 'Collab Sans';
+  src: url('./fonts/woff2/CollabSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Collab Sans', -apple-system, sans-serif;
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="site-footer">
+      <div>
+        <strong>Collab Sans</strong> • Designed by <a href="https://yugal.one" target="_blank" rel="noopener">Yugal</a> with <a href="https://github.com/google-gemini" target="_blank" rel="noopener">Antigravity</a>
+      </div>
+      <div>
+        Derived from Inter by <a href="https://rsms.me" target="_blank" rel="noopener">Rasmus Andersson</a> • <a href="https://scripts.sil.org/OFL" target="_blank" rel="noopener">SIL OFL 1.1</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    let currentWeight = 400;
+    let isItalic = false;
+
+    function setWeight(w) {
+      currentWeight = w;
+      document.getElementById('canvas').style.fontWeight = w;
+      document.querySelectorAll('.wpill').forEach(btn => {
+        btn.classList.toggle('active', parseInt(btn.dataset.weight) === w);
+      });
+    }
+
+    function setSize(s) {
+      document.getElementById('canvas').style.fontSize = s + 'px';
+      document.getElementById('sizeVal').innerText = s + 'px';
+    }
+
+    function toggleItalic() {
+      isItalic = !isItalic;
+      document.getElementById('canvas').style.fontStyle = isItalic ? 'italic' : 'normal';
+      document.getElementById('italicToggle').classList.toggle('active', isItalic);
+    }
+
+    function setText(t) {
+      document.getElementById('canvas').innerText = t;
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      const icon = document.getElementById('themeIcon');
+      if (isDark) {
+        body.removeAttribute('data-theme');
+        icon.innerText = 'dark_mode';
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.innerText = 'light_mode';
+      }
+    }
+  </script>
+</body>
+</html>
