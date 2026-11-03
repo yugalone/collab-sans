@@ -175,6 +175,6 @@ subsets: "menu"
 subsets: "vietnamese"
 source {
   repository_url: "https://github.com/yugalone/collab-sans"
-  archive_url: "https://github.com/yugalone/collab-sans/releases/download/v1.000/CollabSans-Font-Family.zip"
+  archive_url: "https://github.com/yugalone/collab-sans/releases/download/v1.000/Collab-Sans.zip"
   branch: "main"
 }

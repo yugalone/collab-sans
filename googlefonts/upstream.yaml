@@ -1,7 +1,7 @@
 name: Collab Sans
 repository: https://github.com/yugalone/collab-sans
 branch: main
-archive: https://github.com/yugalone/collab-sans/releases/download/v1.000/CollabSans-Font-Family.zip
+archive: https://github.com/yugalone/collab-sans/releases/download/v1.000/Collab-Sans.zip
 files:
   fonts/ttf:
     - CollabSans-Thin.ttf
