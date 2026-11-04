@@ -3,13 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Collab Sans</title>
+  <title>Collab Sans — Inter's optical rigor, softened into warmth</title>
   <meta name="description" content="Collab Sans is a clean, warm neo-grotesque rounded typeface family derived from Inter across 18 styles. Built by Yugal with Antigravity under the SIL Open Font License.">
-
-  <!-- Google Material Symbols Rounded (Minimalist UI Icons) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,0,0" rel="stylesheet">
 
   <style>
     /* ==========================================================================
@@ -179,36 +174,8 @@
     }
 
     /* ==========================================================================
-       Minimalist Design System (Inspired by yugal.one & Modern Zinc Aesthetics)
+       Minimalist Design System (Consistent with Cards UX: Pure Light Theme)
        ========================================================================== */
-    :root {
-      --bg: #ffffff;
-      --bg-subtle: #fafafa;
-      --bg-surface: #f4f4f5;
-      --bg-hover: #e4e4e7;
-      --text: #09090b;
-      --text-muted: #71717a;
-      --border: #e4e4e7;
-      --border-dark: #27272a;
-      --accent: #09090b;
-      --accent-contrast: #ffffff;
-      --font-display: 'Collab Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      --radius: 8px;
-    }
-
-    [data-theme="dark"] {
-      --bg: #09090b;
-      --bg-subtle: #121215;
-      --bg-surface: #1c1c20;
-      --bg-hover: #27272a;
-      --text: #fafafa;
-      --text-muted: #a1a1aa;
-      --border: #242428;
-      --accent: #fafafa;
-      --accent-contrast: #09090b;
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -216,374 +183,464 @@
     }
 
     body {
-      font-family: var(--font-display);
-      background-color: var(--bg);
-      color: var(--text);
+      background-color: #ffffff;
+      color: #0a0a0a;
+      font-family: 'Collab Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      transition: background-color 0.2s ease, color 0.2s ease;
-      padding: 0 20px 80px;
-    }
-
-    /* Clean typography & elevated underline spacing */
-    a, u, .underline {
-      text-decoration: underline;
-      text-underline-offset: 5px;
-      text-decoration-thickness: 1px;
-      text-decoration-color: var(--text-muted);
-      transition: text-decoration-color 0.15s ease, color 0.15s ease;
-    }
-    a:hover {
-      text-decoration-color: var(--text);
+      padding: 60px 32px 140px;
     }
 
     .container {
-      max-width: 840px;
+      max-width: 980px;
       margin: 0 auto;
     }
 
-    /* Minimal Navigation */
-    header.site-header {
-      padding: 36px 0 24px;
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #a3a3a3;
+      transition: text-decoration-color 0.15s ease;
+    }
+    a:hover {
+      text-decoration-color: #0a0a0a;
+    }
+
+    /* Global Section Layout */
+    section {
+      margin-bottom: 96px;
+    }
+
+    .section-header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 56px;
-    }
-
-    .brand-link {
-      text-decoration: none;
-      color: var(--text);
-      display: flex;
       align-items: baseline;
-      gap: 8px;
+      margin-bottom: 28px;
     }
 
-    .brand-name {
-      font-size: 1.15rem;
+    .section-meta {
+      font-size: 14px;
+      font-weight: 600;
+      color: #737373;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
       font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .theme-toggle {
-      background: transparent;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 6px 8px;
-      cursor: pointer;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      font-size: 1rem;
-    }
-    .theme-toggle:hover {
-      background: var(--bg-surface);
-    }
-
-    .pill-link {
-      font-size: 0.82rem;
-      font-weight: 500;
-      padding: 5px 12px;
-      border-radius: 9999px;
-      border: 1px solid var(--border);
-      text-decoration: none;
-      color: var(--text);
-      transition: background 0.15s ease;
-    }
-    .pill-link:hover {
-      background: var(--bg-surface);
-    }
-
-    /* Hero */
-    .hero {
-      margin-bottom: 48px;
-    }
-
-    .hero-title {
-      font-size: clamp(2.4rem, 5.5vw, 4rem);
-      font-weight: 800;
-      line-height: 1.08;
-      letter-spacing: -0.04em;
-      margin-bottom: 18px;
-    }
-
-    .hero-lead {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      max-width: 720px;
-      line-height: 1.55;
+      letter-spacing: -1px;
+      color: #0a0a0a;
+      line-height: 1.15;
       margin-bottom: 24px;
     }
 
-    .hero-meta {
+    /* Header Navigation */
+    header.site-header {
       display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      padding-top: 16px;
-    }
-    .hero-meta strong {
-      color: var(--text);
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 80px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #f0f0f0;
     }
 
-    /* Story Section: The Inter Obsession & Antigravity */
-    .story-card {
-      border-radius: var(--radius);
-      padding: 32px 36px;
-      margin-bottom: 48px;
+    .brand-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-decoration: none;
     }
 
-    .story-body {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: var(--text);
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 0.95rem;
+      color: #737373;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #737373;
+      transition: color 0.15s ease;
+    }
+    .nav-links a:hover {
+      color: #0a0a0a;
+    }
+
+    /* 01 Overview */
+    .hero-title {
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-weight: 800;
+      letter-spacing: -2.5px;
+      line-height: 1.04;
+      margin-bottom: 16px;
+      color: #0a0a0a;
+    }
+
+    .hero-subhead {
+      font-size: clamp(1.3rem, 2.5vw, 2rem);
+      font-weight: 400;
+      color: #525252;
+      letter-spacing: -0.5px;
+      line-height: 1.35;
+      margin-bottom: 40px;
+      max-width: 820px;
+    }
+
+    .specimen-glyphs {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .glyph-line {
+      line-height: 1.25;
+      word-break: break-all;
+    }
+    .glyph-line.caps {
+      font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+      font-weight: 500;
+      letter-spacing: 3px;
+    }
+    .glyph-line.lower {
+      font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #262626;
+    }
+    .glyph-line.nums {
+      font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: #525252;
     }
 
-    .story-body p strong {
+    .overview-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      font-size: 0.95rem;
+      color: #737373;
+      padding-top: 24px;
+      border-top: 1px solid #f0f0f0;
+    }
+    .overview-meta strong {
+      color: #0a0a0a;
       font-weight: 600;
     }
 
-    .note-badge {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-family: var(--font-mono);
-      padding: 2px 8px;
-      border-radius: 4px;
-      background: var(--bg-hover);
-      color: var(--text);
-      vertical-align: middle;
-    }
-
-    /* The Uncrowded Type Tester */
-    .tester-container {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
+    /* 02 Geometry & Comparison */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
       margin-bottom: 48px;
     }
 
-    .tester-controls {
+    .comparison-col-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #737373;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .comparison-col-label.highlight {
+      color: #0a0a0a;
+    }
+
+    .comparison-glyphs {
+      font-size: clamp(4.5rem, 8vw, 7.5rem);
+      line-height: 1;
+      letter-spacing: 8px;
+      margin-bottom: 18px;
+    }
+    .comparison-desc {
+      font-size: 1.1rem;
+      line-height: 1.55;
+      color: #525252;
+    }
+
+    .story-text {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #333333;
+      max-width: 820px;
+    }
+    .story-text strong {
+      color: #0a0a0a;
+      font-weight: 600;
+    }
+
+    /* 03 Type Tester */
+    .tester-toolbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 16px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 20px;
+      gap: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #f0f0f0;
+      margin-bottom: 24px;
     }
 
-    .weight-pills {
+    .weight-selector {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px;
+      gap: 16px;
     }
 
-    .wpill {
+    .w-btn {
       font-family: inherit;
-      font-size: 0.78rem;
-      font-weight: 600;
-      padding: 4px 8px;
-      border-radius: 5px;
-      border: 1px solid transparent;
-      background: transparent;
-      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+      background: none;
+      border: none;
+      color: #737373;
       cursor: pointer;
-      transition: all 0.15s ease;
+      padding: 0;
+      transition: color 0.15s ease;
     }
-    .wpill:hover {
-      color: var(--text);
-      background: var(--bg-surface);
+    .w-btn:hover {
+      color: #0a0a0a;
     }
-    .wpill.active {
-      color: var(--accent-contrast);
-      background: var(--accent);
+    .w-btn.active {
+      color: #0a0a0a;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
-    .tool-group {
+    .tester-adjusters {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #737373;
     }
 
-    .size-slider-wrap {
+    .slider-wrap {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 0.8rem;
-      color: var(--text-muted);
+      gap: 10px;
     }
-    .size-slider-wrap input[type="range"] {
-      width: 90px;
-      accent-color: var(--accent);
+    .slider-wrap input[type="range"] {
+      width: 100px;
+      accent-color: #0a0a0a;
       cursor: pointer;
     }
 
-    .btn-toggle {
+    .italic-btn {
+      background: none;
+      border: none;
       font-family: inherit;
-      font-size: 0.8rem;
+      font-size: 0.95rem;
       font-weight: 600;
-      padding: 4px 10px;
-      border-radius: 5px;
-      border: 1px solid var(--border);
-      background: transparent;
-      color: var(--text);
+      color: #737373;
       cursor: pointer;
     }
-    .btn-toggle.active {
-      background: var(--accent);
-      color: var(--accent-contrast);
-      border-color: var(--accent);
+    .italic-btn.active {
+      color: #0a0a0a;
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
-    /* Editable Canvas */
     .editable-canvas {
       width: 100%;
       min-height: 140px;
       outline: none;
-      font-size: 48px;
+      font-size: clamp(2rem, 5vw, 3.25rem);
       font-weight: 400;
       line-height: 1.25;
       letter-spacing: -0.02em;
-      padding: 12px 4px;
+      padding: 24px 0;
       word-break: break-word;
+      color: #0a0a0a;
+      border-bottom: 1px solid #f0f0f0;
     }
 
-    .sample-chips {
+    .preset-links {
       display: flex;
-      gap: 6px;
+      align-items: baseline;
+      gap: 18px;
       flex-wrap: wrap;
       padding-top: 16px;
-      border-top: 1px dashed var(--border);
-      margin-top: 16px;
+      font-size: 0.9rem;
+      color: #737373;
     }
-
-    .schip {
+    .preset-btn {
+      background: none;
+      border: none;
       font-family: inherit;
-      font-size: 0.78rem;
-      padding: 3px 9px;
-      border-radius: 9999px;
-      background: var(--bg-surface);
-      border: 1px solid transparent;
-      color: var(--text-muted);
+      font-size: inherit;
+      color: #525252;
       cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-color: #d4d4d4;
     }
-    .schip:hover {
-      color: var(--text);
-      border-color: var(--border);
+    .preset-btn:hover {
+      color: #0a0a0a;
+      text-decoration-color: #0a0a0a;
     }
 
-    /* Clean Waterfall */
-    .waterfall-card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px 28px;
-      margin-bottom: 48px;
+    /* 04 Weight Progression */
+    .weight-stack {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 14px;
     }
 
-    .wf-row {
-      display: grid;
-      grid-template-columns: 80px 1fr;
+    .weight-row {
+      display: flex;
       align-items: baseline;
-      gap: 16px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 16px;
-    }
-    .wf-row:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
+      gap: 36px;
     }
 
-    .wf-tag {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--text-muted);
+    .weight-num {
+      width: 48px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #737373;
+      font-feature-settings: "tnum" 1;
     }
 
-    .wf-line {
-      line-height: 1.25;
-      letter-spacing: -0.02em;
-      font-size: 26px;
+    .weight-sample {
+      font-size: clamp(1.1rem, 2vw, 1.7rem);
+      letter-spacing: -0.2px;
+      line-height: 1.3;
+      color: #0a0a0a;
     }
 
-    /* How to Use / Code Snippet */
-    .embed-card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px 28px;
-      margin-bottom: 48px;
+    /* 05 In Use / Data Hierarchy */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #f0f0f0;
+      margin-bottom: 32px;
     }
 
-    .embed-title {
-      font-size: 1.1rem;
-      font-weight: 700;
+    .metric-item-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #737373;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
       margin-bottom: 8px;
-      letter-spacing: -0.02em;
     }
 
-    .embed-desc {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      margin-bottom: 16px;
+    .metric-item-val {
+      font-size: clamp(2rem, 3.5vw, 3.25rem);
+      font-weight: 700;
+      color: #0a0a0a;
+      letter-spacing: -1px;
+      font-feature-settings: "tnum" 1;
+      line-height: 1.1;
     }
 
-    .code-box {
-      background: var(--bg-subtle);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 14px 16px;
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      color: var(--text);
+    .metric-item-sub {
+      font-size: 0.95rem;
+      color: #525252;
+      margin-top: 6px;
+    }
+
+    .data-table {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .data-row {
+      display: grid;
+      grid-template-columns: 160px 1fr 180px 140px;
+      font-size: 1.1rem;
+      color: #0a0a0a;
+      align-items: baseline;
+    }
+    .data-row.header {
+      font-size: 13px;
+      font-weight: 600;
+      color: #737373;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .data-row .id {
+      font-weight: 600;
+      font-feature-settings: "tnum" 1;
+    }
+    .data-row .desc {
+      color: #262626;
+    }
+    .data-row .date {
+      color: #737373;
+      font-size: 0.95rem;
+      font-feature-settings: "tnum" 1;
+    }
+    .data-row .val {
+      font-weight: 600;
+      font-feature-settings: "tnum" 1;
+      text-align: right;
+    }
+
+    /* 06 Web Usage */
+    .code-snippet {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #262626;
+      padding: 24px 0;
+      border-top: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
       overflow-x: auto;
-      line-height: 1.5;
     }
 
-    /* Footer */
+    /* Site Footer */
     footer.site-footer {
-      padding-top: 32px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
       flex-wrap: wrap;
-      gap: 14px;
-      font-size: 0.85rem;
-      color: var(--text-muted);
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #737373;
+      padding-top: 36px;
+      border-top: 1px solid #f0f0f0;
     }
 
-    footer a {
-      color: inherit;
-    }
-
-    @media (max-width: 680px) {
-      .wf-row {
-        grid-template-columns: 1fr;
-        gap: 4px;
+    @media (max-width: 720px) {
+      body {
+        padding: 40px 20px 80px;
       }
-      .tester-controls {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .data-row {
+        grid-template-columns: 120px 1fr 100px;
+      }
+      .data-row .date {
+        display: none;
+      }
+      .weight-row {
+        gap: 18px;
+      }
+      .tester-toolbar {
         flex-direction: column;
         align-items: flex-start;
-      }
-      .tool-group {
-        width: 100%;
-        justify-content: space-between;
-      }
-      .story-card {
-        padding: 24px;
       }
     }
   </style>
@@ -592,142 +649,257 @@
 
   <div class="container">
 
-    <!-- Top Navigation -->
+    <!-- Minimal Header -->
     <header class="site-header">
-      <a href="https://yugal.one" class="brand-link">
-        <span class="brand-name">Collab Sans</span>
-      </a>
-      <div class="header-actions">
-        <a href="https://github.com/yugalone/collab-sans" target="_blank" rel="noopener" class="pill-link">GitHub</a>
-        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme" aria-label="Toggle Dark Mode">
-          <span class="material-symbols-rounded" id="themeIcon" style="font-size: 18px;">dark_mode</span>
-        </button>
-      </div>
+      <a href="https://yugal.one" class="brand-name">Collab Sans</a>
+      <nav class="nav-links">
+        <a href="https://yugal.one">yugal.one</a>
+        <a href="https://github.com/yugalone/collab-sans" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://pages.razorpay.com/yugalone" target="_blank" rel="noopener">Support</a>
+        <a href="https://scripts.sil.org/OFL" target="_blank" rel="noopener">SIL OFL 1.1</a>
+      </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <h1 class="hero-title">
-        Inter’s optical rigor,<br>softened into warmth.
-      </h1>
-      <p class="hero-lead">
-        <strong>Collab Sans</strong> is a clean, rounded neo-grotesque typeface family across 18 styles (9 weights from Thin to Black, with matching true italics). Semicircular tangent caps meet proportional concave fillets.
-      </p>
-      <div class="hero-meta">
-        <div>Styles: <strong>18 (9 Upright + 9 Italic)</strong></div>
+    <!-- 01 Overview -->
+    <section>
+      <div class="section-header">
+        <div class="section-meta">Collab Sans  /  01 Overview</div>
+        <div class="section-meta">SIL Open Font License 1.1</div>
+      </div>
+
+      <h1 class="hero-title">Collab Sans</h1>
+      <p class="hero-subhead">Inter’s optical rigor, softened into warmth.</p>
+
+      <div class="specimen-glyphs">
+        <div class="glyph-line caps">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+        <div class="glyph-line lower">abcdefghijklmnopqrstuvwxyz</div>
+        <div class="glyph-line nums">0123456789  &  —  %  $  ( )  [ ]  /</div>
+      </div>
+
+      <div class="overview-meta">
+        <div>Styles: <strong>18 (9 Upright + 9 True Italics)</strong></div>
         <div>Glyphs: <strong>2,548 per font</strong></div>
         <div>Formats: <strong>TTF, OTF, WOFF2</strong></div>
-        <div>License: <strong>SIL OFL 1.1 (Free for Personal &amp; Commercial)</strong></div>
+        <div>Derived from: <strong>Inter by Rasmus Andersson</strong></div>
       </div>
     </section>
 
-    <!-- Origin Story: The Inter Obsession & Antigravity -->
-    <section class="story-card">
-      <div class="story-body">
-        <p>
-          I am not a professional developer or traditional type designer. My background is rooted in organizational systems, finance, and building scalable enterprise workflows as a citizen developer. For me, <strong>minimalism is not a design preference—it is a way of living and working</strong>: stripping away noise so function and clarity become obvious.
-        </p>
-        <p>
-          That obsession with clarity drew me directly to Rasmus Andersson’s <strong>Inter</strong>—the undisputed benchmark of modern digital interface typography. But across product interfaces, data dashboards, and mobile surfaces, I felt a recurring void: I wanted the mathematical precision and micro-legibility of Inter, but with the warmth, friendliness, and understated minimalism that only genuinely rounded terminals can bring.
-        </p>
-        <p>
-          Rather than drawing outlines by hand, I built this entire font family using <strong>Antigravity</strong> (Google's agentic AI coding environment). Together, we engineered an algorithmic geometry engine in Python that traversed Inter's 2,548 glyphs contour-by-contour:
-        </p>
-        <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
-          <li><strong>Tangent-Continuous Semicircular Terminals:</strong> Curving stroke ends with exact circular caps ($R = 0.50 \times W$) across horizontal, vertical, and $9.4^\circ$ italic terminals.</li>
-          <li><strong>Ink-Trap Preserved Fillets:</strong> Applying proportional inner fillets ($R = 0.14 \times W$) to prevent ink clogging and optical muddiness at small 11px–14px UI sizes.</li>
-          <li><strong>Zero Feature Compromise:</strong> Retaining every kerning pair, tabular figure (`tnum`), slashed zero, fraction, and stylistic set from the original Inter.</li>
-        </ul>
+    <!-- 02 Geometry & Terminals -->
+    <section>
+      <div class="section-header">
+        <div class="section-meta">Collab Sans  /  02 Terminals</div>
+        <div class="section-meta">Optical Geometry</div>
       </div>
-    </section>
 
-    <!-- Clean, Uncrowded Type Tester -->
-    <section class="tester-container">
-      <div class="tester-controls">
-        <div class="weight-pills" id="weightPills">
-          <button class="wpill" data-weight="100" onclick="setWeight(100)">100</button>
-          <button class="wpill" data-weight="200" onclick="setWeight(200)">200</button>
-          <button class="wpill" data-weight="300" onclick="setWeight(300)">300</button>
-          <button class="wpill active" data-weight="400" onclick="setWeight(400)">400</button>
-          <button class="wpill" data-weight="500" onclick="setWeight(500)">500</button>
-          <button class="wpill" data-weight="600" onclick="setWeight(600)">600</button>
-          <button class="wpill" data-weight="700" onclick="setWeight(700)">700</button>
-          <button class="wpill" data-weight="800" onclick="setWeight(800)">800</button>
-          <button class="wpill" data-weight="900" onclick="setWeight(900)">900</button>
-        </div>
+      <h2 class="section-title">Terminal Geometry</h2>
 
-        <div class="tool-group">
-          <div class="size-slider-wrap">
-            <span>Size</span>
-            <input type="range" id="sizeSlider" min="20" max="96" value="48" oninput="setSize(this.value)">
-            <span id="sizeVal" style="font-family: var(--font-mono); width: 36px;">48px</span>
+      <div class="comparison-grid">
+        <div>
+          <div class="comparison-col-label">Inter (Original)</div>
+          <div class="comparison-glyphs" style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 700; color: #525252;">
+            C r t &
           </div>
-          <button class="btn-toggle" id="italicToggle" onclick="toggleItalic()">Italic</button>
+          <p class="comparison-desc">
+            Sharp 90° cut terminals designed for screen micro-legibility and mathematical precision.
+          </p>
+        </div>
+
+        <div>
+          <div class="comparison-col-label highlight">Collab Sans (Derivative)</div>
+          <div class="comparison-glyphs" style="font-weight: 700; color: #0a0a0a;">
+            C r t &
+          </div>
+          <p class="comparison-desc">
+            Tangent-continuous circular caps that introduce organic warmth without optical distortion.
+          </p>
         </div>
       </div>
 
-      <!-- Live Canvas -->
+      <div class="story-text">
+        <p>
+          I am not a professional developer or traditional type designer. My background is rooted in organizational systems, finance, and building scalable enterprise workflows as a citizen developer (<a href="https://yugal.one" target="_blank" rel="noopener">yugal.one</a>). For me, <strong>minimalism is not a design preference—it is a way of living and working</strong>: stripping away noise so function and clarity become obvious.
+        </p>
+        <p>
+          That obsession with clarity drew me directly to Rasmus Andersson’s <strong>Inter</strong>—the undisputed benchmark of modern digital interface typography. Across product interfaces and data dashboards, I wanted that exact mathematical precision and micro-legibility, but with the warmth and understated minimalism that only genuinely rounded terminals can bring.
+        </p>
+        <p>
+          Rather than drawing outlines by hand, I built this entire font family using <strong>Antigravity</strong> (Google's agentic AI coding environment). Together, we engineered an algorithmic geometry engine in Python that traversed Inter's 2,548 glyphs contour-by-contour: curving stroke ends with tangent-continuous semicircular caps ($R = 0.50 \times W$) and preserving proportional inner ink-traps ($R = 0.14 \times W$) so text remains razor-sharp at 11px–14px UI sizes.
+        </p>
+      </div>
+    </section>
+
+    <!-- 03 Interactive Tester -->
+    <section>
+      <div class="section-header">
+        <div class="section-meta">Collab Sans  /  03 Interactive Tester</div>
+        <div class="section-meta">Live Specimen Canvas</div>
+      </div>
+
+      <div class="tester-toolbar">
+        <div class="weight-selector" id="weightSelector">
+          <button class="w-btn" data-weight="100" onclick="setWeight(100)">100</button>
+          <button class="w-btn" data-weight="200" onclick="setWeight(200)">200</button>
+          <button class="w-btn" data-weight="300" onclick="setWeight(300)">300</button>
+          <button class="w-btn active" data-weight="400" onclick="setWeight(400)">400</button>
+          <button class="w-btn" data-weight="500" onclick="setWeight(500)">500</button>
+          <button class="w-btn" data-weight="600" onclick="setWeight(600)">600</button>
+          <button class="w-btn" data-weight="700" onclick="setWeight(700)">700</button>
+          <button class="w-btn" data-weight="800" onclick="setWeight(800)">800</button>
+          <button class="w-btn" data-weight="900" onclick="setWeight(900)">900</button>
+        </div>
+
+        <div class="tester-adjusters">
+          <div class="slider-wrap">
+            <span>Size</span>
+            <input type="range" id="sizeSlider" min="18" max="96" value="52" oninput="setSize(this.value)">
+            <span id="sizeVal" style="font-feature-settings: 'tnum' 1; width: 40px;">52px</span>
+          </div>
+          <button class="italic-btn" id="italicBtn" onclick="toggleItalic()">Italic</button>
+        </div>
+      </div>
+
+      <!-- Editable Canvas -->
       <div class="editable-canvas" id="canvas" contenteditable="true" spellcheck="false">
         Clarity over noise, intent over decoration, function over abstraction.
       </div>
 
-      <!-- Quick Text Presets -->
-      <div class="sample-chips">
-        <span style="font-size: 0.78rem; color: var(--text-muted); align-self: center;">Try:</span>
-        <button class="schip" onclick="setText('Clarity over noise, intent over decoration, function over abstraction.')">Manifesto</button>
-        <button class="schip" onclick="setText('Sphinx of black quartz, judge my vow. 1234567890')">Pangram</button>
-        <button class="schip" onclick="setText('Quarterly Revenue: $1,489,200 (+18.4% YoY) • SLA: 99.98%')">Metrics &amp; Figures</button>
-        <button class="schip" onclick="setText('ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789')">Alphabet</button>
+      <!-- Preset Text Links -->
+      <div class="preset-links">
+        <span>Try:</span>
+        <button class="preset-btn" onclick="setText('Clarity over noise, intent over decoration, function over abstraction.')">Manifesto</button>
+        <button class="preset-btn" onclick="setText('Sphinx of black quartz, judge my vow. 1234567890')">Pangram</button>
+        <button class="preset-btn" onclick="setText('Quarterly Revenue: $1,489,200 (+18.4% YoY) • SLA: 99.98%')">Metrics &amp; Figures</button>
+        <button class="preset-btn" onclick="setText('ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789')">Alphabet</button>
       </div>
     </section>
 
-    <!-- Waterfall Scale -->
-    <section class="waterfall-card">
-      <div class="wf-row">
-        <span class="wf-tag">100 Thin</span>
-        <div class="wf-line" style="font-weight: 100;">Every complex system began as a simple system that worked.</div>
+    <!-- 04 Weight Progression -->
+    <section>
+      <div class="section-header">
+        <div class="section-meta">Collab Sans  /  04 Weights</div>
+        <div class="section-meta">100 to 900</div>
       </div>
-      <div class="wf-row">
-        <span class="wf-tag">300 Light</span>
-        <div class="wf-line" style="font-weight: 300;">Minimalism is not a design preference—it is a way of living.</div>
-      </div>
-      <div class="wf-row">
-        <span class="wf-tag">400 Regular</span>
-        <div class="wf-line" style="font-weight: 400;">Balancing clean, accessible design with enterprise governance.</div>
-      </div>
-      <div class="wf-row">
-        <span class="wf-tag">600 SemiBold</span>
-        <div class="wf-line" style="font-weight: 600;">Tangent-continuous terminals with preserved optical ink-traps.</div>
-      </div>
-      <div class="wf-row">
-        <span class="wf-tag">800 ExtraBold</span>
-        <div class="wf-line" style="font-weight: 800;">Derived from Inter, engineered with Antigravity.</div>
-      </div>
-      <div class="wf-row">
-        <span class="wf-tag">900 Black</span>
-        <div class="wf-line" style="font-weight: 900;">Maximum punch and friendly human authority.</div>
+
+      <h2 class="section-title">The Weight Progression</h2>
+
+      <div class="weight-stack">
+        <div class="weight-row">
+          <div class="weight-num">100</div>
+          <div class="weight-sample" style="font-weight: 100;">Every complex system began as a simple system that worked.</div>
+        </div>
+        <div class="weight-row">
+          <div class="weight-num">200</div>
+          <div class="weight-sample" style="font-weight: 200;">Minimalism is not a design preference—it is a way of living.</div>
+        </div>
+        <div class="weight-row">
+          <div class="weight-num">300</div>
+          <div class="weight-sample" style="font-weight: 300;">Balancing clean, accessible design with enterprise governance.</div>
+        </div>
+        <div class="weight-row">
+          <div class="weight-num">400</div>
+          <div class="weight-sample" style="font-weight: 400;">Clarity over noise, intent over decoration, function over abstraction.</div>
+        </div>
+        <div class="weight-row">
+          <div class="weight-num">500</div>
+          <div class="weight-sample" style="font-weight: 500;">Mathematical precision softened into approachable warmth.</div>
+        </div>
+        <div class="weight-row">
+          <div class="weight-num">600</div>
+          <div class="weight-sample" style="font-weight: 600;">Tangent-continuous terminals with preserved optical ink-traps.</div>
+        </div>
+        <div class="weight-row">
+          <div class="weight-num">700</div>
+          <div class="weight-sample" style="font-weight: 700;">Sub-contour adaptive scaling across small symbols and punctuation.</div>
+        </div>
+        <div class="weight-row">
+          <div class="weight-num">800</div>
+          <div class="weight-sample" style="font-weight: 800;">Derived from Inter, engineered with Antigravity.</div>
+        </div>
+        <div class="weight-row">
+          <div class="weight-num">900</div>
+          <div class="weight-sample" style="font-weight: 900;">Collab Sans — Free for personal and commercial use.</div>
+        </div>
       </div>
     </section>
 
-    <!-- Quick Web Usage / Google Sites -->
-    <section class="embed-card">
-      <h2 class="embed-title">Use Collab Sans on the Web</h2>
-      <p class="embed-desc">Self-host with CSS or link directly in your web applications.</p>
-      <div class="code-box">
-<pre><code>/* Include in your CSS */
+    <!-- 05 In Use / Data Hierarchy -->
+    <section>
+      <div class="section-header">
+        <div class="section-meta">Collab Sans  /  05 In Use</div>
+        <div class="section-meta">Data &amp; Interface Legibility</div>
+      </div>
+
+      <h2 class="section-title">Interface Typographic Hierarchy</h2>
+
+      <div class="metrics-grid">
+        <div>
+          <div class="metric-item-label">Monthly Processed</div>
+          <div class="metric-item-val">$482,950.00</div>
+          <div class="metric-item-sub">+14.2% monthly operational flow</div>
+        </div>
+        <div>
+          <div class="metric-item-label">Active Workflows</div>
+          <div class="metric-item-val">1,248</div>
+          <div class="metric-item-sub">99.98% runtime consistency</div>
+        </div>
+        <div>
+          <div class="metric-item-label">Automated Records</div>
+          <div class="metric-item-val">84,392</div>
+          <div class="metric-item-sub">Zero structural dropped frames</div>
+        </div>
+      </div>
+
+      <div class="data-table">
+        <div class="data-row header">
+          <div>Record ID</div>
+          <div>Operational Workflow</div>
+          <div>Timestamp</div>
+          <div style="text-align: right;">Amount</div>
+        </div>
+        <div class="data-row">
+          <div class="id">#ORD-90241</div>
+          <div class="desc">Inventory Ledger Allocation</div>
+          <div class="date">2026-11-04 12:45</div>
+          <div class="val">$14,250.00</div>
+        </div>
+        <div class="data-row">
+          <div class="id">#BOM-48192</div>
+          <div class="desc">Multi-Tiered Assembly Run</div>
+          <div class="date">2026-11-04 12:30</div>
+          <div class="val">$8,940.50</div>
+        </div>
+        <div class="data-row">
+          <div class="id">#FIN-10482</div>
+          <div class="desc">Chart of Accounts Consolidation</div>
+          <div class="date">2026-11-04 11:15</div>
+          <div class="val">$42,100.00</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Web Usage -->
+    <section>
+      <div class="section-header">
+        <div class="section-meta">Collab Sans  /  06 Usage</div>
+        <div class="section-meta">Webfont Embed</div>
+      </div>
+
+      <h2 class="section-title">Self-Host in CSS</h2>
+
+      <pre class="code-snippet"><code>/* Include in your CSS */
 @font-face {
   font-family: 'Collab Sans';
   src: url('./fonts/woff2/CollabSans-Regular.woff2') format('woff2');
   font-weight: 400;
+  font-display: swap;
 }
 
 body {
   font-family: 'Collab Sans', -apple-system, sans-serif;
 }</code></pre>
-      </div>
     </section>
 
-    <!-- Minimal Footer -->
+    <!-- Minimalist Footer -->
     <footer class="site-footer">
       <div>
         <strong>Collab Sans</strong> • Designed by <a href="https://yugal.one" target="_blank" rel="noopener">Yugal</a> with <a href="https://github.com/google-gemini" target="_blank" rel="noopener">Antigravity</a>
@@ -746,7 +918,7 @@ body {
     function setWeight(w) {
       currentWeight = w;
       document.getElementById('canvas').style.fontWeight = w;
-      document.querySelectorAll('.wpill').forEach(btn => {
+      document.querySelectorAll('.w-btn').forEach(btn => {
         btn.classList.toggle('active', parseInt(btn.dataset.weight) === w);
       });
     }
@@ -759,24 +931,11 @@ body {
     function toggleItalic() {
       isItalic = !isItalic;
       document.getElementById('canvas').style.fontStyle = isItalic ? 'italic' : 'normal';
-      document.getElementById('italicToggle').classList.toggle('active', isItalic);
+      document.getElementById('italicBtn').classList.toggle('active', isItalic);
     }
 
     function setText(t) {
       document.getElementById('canvas').innerText = t;
-    }
-
-    function toggleTheme() {
-      const body = document.body;
-      const isDark = body.getAttribute('data-theme') === 'dark';
-      const icon = document.getElementById('themeIcon');
-      if (isDark) {
-        body.removeAttribute('data-theme');
-        icon.innerText = 'dark_mode';
-      } else {
-        body.setAttribute('data-theme', 'dark');
-        icon.innerText = 'light_mode';
-      }
     }
   </script>
 </body>
