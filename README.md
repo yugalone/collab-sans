@@ -68,7 +68,7 @@ h1, h2, h3 {
 
 ## Interactive Specimen
 
-Open `index.html` in any web browser to preview and test all weights, adjust font size, line-height, and explore the interactive typography laboratory.
+Experience the interactive type tester, weight progression, and specimen laboratory at **[yugal.one/collab-sans](https://yugal.one/collab-sans)**.
 
 ---
 
