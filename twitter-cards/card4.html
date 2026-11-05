@@ -1,75 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset='utf-8'>
+<meta charset="utf-8">
+<title>Collab Sans — Card 04 In Use</title>
+<link rel="stylesheet" href="styles.css">
 <style>
+/* ==========================================================================
+   Collab Sans Marketing Cards — Design System
+   Aligned with yugal.one/css/style.css Minimalist Editorial Design System
+   Canvas: 1600 x 900 (16:9 Twitter/X, OpenGraph & Social Specimen Cards)
+   ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   Design Tokens (Strict 1:1 match with yugal.one)
+   -------------------------------------------------------------------------- */
+:root {
+  --bg: #ffffff;
+  --text-main: #111111;
+  --text-body: #2e2e2e;
+  --text-muted: #6e6e73;
+  --text-faint: #999999;
+  --line: rgba(0, 0, 0, 0.08);
+  --line-faint: rgba(0, 0, 0, 0.04);
+  --selection-bg: rgba(0, 0, 0, 0.07);
 
+  --font-sans: 'Collab Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* --------------------------------------------------------------------------
+   Font Family Definition (WOFF2)
+   -------------------------------------------------------------------------- */
 @font-face {
   font-family: 'Collab Sans';
   font-weight: 100;
+  font-style: normal;
   src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Thin.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Collab Sans';
+  font-weight: 100;
+  font-style: italic;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ThinItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
   font-weight: 200;
+  font-style: normal;
   src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ExtraLight.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Collab Sans';
+  font-weight: 200;
+  font-style: italic;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ExtraLightItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
   font-weight: 300;
+  font-style: normal;
   src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Light.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Collab Sans';
+  font-weight: 300;
+  font-style: italic;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-LightItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
   font-weight: 400;
+  font-style: normal;
   src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Regular.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Collab Sans';
-  font-weight: 500;
-  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Medium.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Collab Sans';
-  font-weight: 600;
-  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-SemiBold.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Collab Sans';
-  font-weight: 700;
-  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Bold.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Collab Sans';
-  font-weight: 800;
-  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ExtraBold.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Collab Sans';
-  font-weight: 900;
-  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Black.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Collab Sans';
-  font-style: italic;
   font-weight: 400;
+  font-style: italic;
   src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Italic.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Collab Sans';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 500;
   font-style: italic;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-MediumItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 600;
+  font-style: italic;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-SemiBoldItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
   font-weight: 700;
+  font-style: normal;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 700;
+  font-style: italic;
   src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-BoldItalic.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 800;
+  font-style: normal;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 800;
+  font-style: italic;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ExtraBoldItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 900;
+  font-style: normal;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Black.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 900;
+  font-style: italic;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-BlackItalic.woff2') format('woff2');
+}
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* --------------------------------------------------------------------------
+   Card Canvas Base
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 1600px;
   height: 900px;
-  background: #ffffff;
-  color: #111111;
-  font-family: 'Collab Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: var(--font-sans);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -77,164 +162,366 @@ body {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
+
+/* --------------------------------------------------------------------------
+   Header & Footer Meta Navigation
+   -------------------------------------------------------------------------- */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
+
 .header-meta {
   font-size: 13.5px;
   font-weight: 500;
-  color: #6e6e73;
+  color: var(--text-muted);
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   font-size: 15px;
-  color: #6e6e73;
+  color: var(--text-muted);
   font-weight: 400;
   letter-spacing: -0.01em;
 }
 
+.footer strong,
+.footer .meta-highlight {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   Common Section & Typography Headings
+   -------------------------------------------------------------------------- */
 .main {
   display: flex;
   flex-direction: column;
-  gap: 36px;
 }
-.section-title {
-  font-size: 42px;
+
+.section-label {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-faint);
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 44px;
   font-weight: 400;
   letter-spacing: -0.025em;
-  color: #111111;
+  color: var(--text-main);
+  line-height: 1.15;
 }
-.metrics-row {
+
+.card-title.hero {
+  font-size: 92px;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.card-subhead {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-top: 10px;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   Card 1: Character Specimen Components
+   -------------------------------------------------------------------------- */
+.glyph-block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.glyph-row {
+  line-height: 1.32;
+  word-break: break-all;
+}
+
+.glyph-row.caps {
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--text-main);
+}
+
+.glyph-row.lower {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--text-body);
+}
+
+.glyph-row.numbers {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Card 2: Terminal Geometry Comparison Components
+   -------------------------------------------------------------------------- */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 88px;
+  margin-top: 36px;
+}
+
+.comparison-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-header {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.col-header.active {
+  color: var(--text-main);
+}
+
+.col-sample {
+  font-size: 136px;
+  line-height: 1;
+  letter-spacing: 8px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.col-sample.inter-sample {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-muted);
+}
+
+.col-sample.collab-sample {
+  font-family: var(--font-sans);
+  color: var(--text-main);
+}
+
+.col-note {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 540px;
+}
+
+.col-note.active {
+  color: var(--text-body);
+}
+
+/* --------------------------------------------------------------------------
+   Card 3: Weight Spectrum Components
+   -------------------------------------------------------------------------- */
+.weight-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.weight-row {
+  display: flex;
+  align-items: baseline;
+  gap: 36px;
+}
+
+.weight-num {
+  width: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.weight-sample {
+  font-size: 26px;
+  color: var(--text-main);
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+/* --------------------------------------------------------------------------
+   Card 4: Interface Typographic Hierarchy Components
+   -------------------------------------------------------------------------- */
+.ui-metrics-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding-bottom: 28px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 32px;
+  border-bottom: 1px solid var(--line);
 }
+
 .metric-label {
   font-size: 13px;
   font-weight: 500;
-  color: #6e6e73;
+  color: var(--text-faint);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   margin-bottom: 10px;
 }
-.metric-value {
+
+.metric-val {
   font-size: 52px;
   font-weight: 600;
-  color: #111111;
+  color: var(--text-main);
   letter-spacing: -0.02em;
   font-variant-numeric: tabular-nums;
+  line-height: 1.15;
 }
+
 .metric-sub {
   font-size: 15px;
-  color: #6e6e73;
+  color: var(--text-muted);
   margin-top: 6px;
 }
-.data-table {
+
+.ui-table-wrap {
+  margin-top: 28px;
+}
+
+.ui-table {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
-.table-head {
+
+.ui-table-head, .ui-table-row {
   display: grid;
   grid-template-columns: 180px 1fr 200px 160px;
+  align-items: baseline;
+}
+
+.ui-table-head {
   font-size: 12.5px;
   font-weight: 500;
-  color: #999999;
+  color: var(--text-faint);
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line-faint);
 }
-.table-row {
-  display: grid;
-  grid-template-columns: 180px 1fr 200px 160px;
+
+.ui-table-row {
   font-size: 19px;
-  color: #2e2e2e;
-  align-items: baseline;
+  color: var(--text-body);
   padding: 4px 0;
 }
-.table-row .id {
+
+.row-id {
   font-weight: 500;
-  color: #111111;
+  color: var(--text-main);
   font-variant-numeric: tabular-nums;
 }
-.table-row .desc {
-  color: #2e2e2e;
+
+.row-desc {
+  color: var(--text-body);
 }
-.table-row .date {
-  color: #6e6e73;
+
+.row-date {
+  color: var(--text-muted);
   font-size: 16px;
   font-variant-numeric: tabular-nums;
 }
-.table-row .val {
+
+.row-val {
   font-weight: 600;
-  color: #111111;
+  color: var(--text-main);
   font-variant-numeric: tabular-nums;
   text-align: right;
 }
+
+.num-col {
+  text-align: right;
+}
+
+.inline-code {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  color: var(--text-body);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
 </style>
 </head>
 <body>
 <div class="header">
-  <div class="header-meta">Collab Sans  /  04 In Use</div>
+  <div class="header-meta">Collab Sans &nbsp;/&nbsp; 04 In Use</div>
   <div class="header-meta">Data &amp; Interface Legibility</div>
 </div>
 
 <div class="main">
-  <div class="section-title">Interface Typographic Hierarchy</div>
+  <div class="card-title">Interface Typographic Hierarchy</div>
 
-  <div class="metrics-row">
+  <div class="ui-metrics-row">
     <div>
       <div class="metric-label">Monthly Processed</div>
-      <div class="metric-value">$482,950.00</div>
+      <div class="metric-val">$482,950.00</div>
       <div class="metric-sub">+14.2% monthly operational flow</div>
     </div>
     <div>
       <div class="metric-label">Active Workflows</div>
-      <div class="metric-value">1,248</div>
+      <div class="metric-val">1,248</div>
       <div class="metric-sub">99.98% runtime consistency</div>
     </div>
     <div>
       <div class="metric-label">Automated Records</div>
-      <div class="metric-value">84,392</div>
+      <div class="metric-val">84,392</div>
       <div class="metric-sub">Zero structural dropped frames</div>
     </div>
   </div>
 
-  <div class="data-table">
-    <div class="table-head">
-      <div>Record ID</div>
-      <div>Operational Workflow</div>
-      <div>Timestamp</div>
-      <div style="text-align: right;">Amount</div>
-    </div>
-    <div class="table-row">
-      <div class="id">#ORD-90241</div>
-      <div class="desc">Inventory Ledger Allocation</div>
-      <div class="date">2026-11-04 12:45</div>
-      <div class="val">$14,250.00</div>
-    </div>
-    <div class="table-row">
-      <div class="id">#BOM-48192</div>
-      <div class="desc">Multi-Tiered Assembly Run</div>
-      <div class="date">2026-11-04 12:30</div>
-      <div class="val">$8,940.50</div>
+  <div class="ui-table-wrap">
+    <div class="ui-table">
+      <div class="ui-table-head">
+        <div>Record ID</div>
+        <div>Operational Workflow</div>
+        <div>Timestamp</div>
+        <div class="num-col">Amount</div>
+      </div>
+      <div class="ui-table-row">
+        <div class="row-id">#ORD-90241</div>
+        <div class="row-desc">Inventory Ledger Allocation</div>
+        <div class="row-date">2026-11-04 12:45</div>
+        <div class="row-val num-col">$14,250.00</div>
+      </div>
+      <div class="ui-table-row">
+        <div class="row-id">#BOM-48192</div>
+        <div class="row-desc">Multi-Tiered Assembly Run</div>
+        <div class="row-date">2026-11-04 12:30</div>
+        <div class="row-val num-col">$8,940.50</div>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <div>Tabular figures (`tnum`) preserve numerical column alignment</div>
-  <div>Optimized for data dashboards and financial systems</div>
+  <div>Tabular figures (<code class="inline-code">tnum</code>) preserve vertical column alignment</div>
+  <div>Engineered for enterprise dashboards and financial systems</div>
 </div>
 </body>
 </html>
