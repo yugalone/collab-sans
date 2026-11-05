@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 100;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Thin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 200;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 300;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 400;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 500;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 600;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 700;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 800;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 900;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Black.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-BoldItalic.woff2') format('woff2');
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  width: 1600px;
+  height: 900px;
+  background: #ffffff;
+  color: #111111;
+  font-family: 'Collab Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 85px 110px;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.header-meta {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #6e6e73;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 15px;
+  color: #6e6e73;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.title {
+  font-size: 92px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #111111;
+}
+.subhead {
+  font-size: 30px;
+  font-weight: 400;
+  color: #6e6e73;
+  margin-top: 8px;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+}
+.glyph-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+.glyph-row {
+  font-size: 42px;
+  line-height: 1.35;
+}
+.glyph-row.caps {
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #111111;
+}
+.glyph-row.lower {
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: #2e2e2e;
+}
+.glyph-row.numbers {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #6e6e73;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-meta">Collab Sans  /  01 Overview</div>
+  <div class="header-meta">SIL Open Font License 1.1</div>
+</div>
+
+<div class="main">
+  <div>
+    <h1 class="title">Collab Sans</h1>
+    <p class="subhead">Inter's optical rigor, softened into warmth.</p>
+  </div>
+  
+  <div class="glyph-block">
+    <div class="glyph-row caps">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="glyph-row lower">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="glyph-row numbers">0123456789  &amp;  —  %  $  ( )  [ ]  /</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div>18 Styles: 9 Weights (Thin to Black) + Matching Italics</div>
+  <div>Derived from Inter by Rasmus Andersson</div>
+</div>
+</body>
+</html>

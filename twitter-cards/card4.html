@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+
+
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 100;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Thin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 200;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 300;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 400;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 500;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 600;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 700;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 800;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-weight: 900;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Black.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Collab Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/Users/yugal/Desktop/collab-sans/fonts/woff2/CollabSans-BoldItalic.woff2') format('woff2');
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  width: 1600px;
+  height: 900px;
+  background: #ffffff;
+  color: #111111;
+  font-family: 'Collab Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 85px 110px;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.header-meta {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #6e6e73;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 15px;
+  color: #6e6e73;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.section-title {
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  color: #111111;
+}
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.metric-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6e6e73;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+}
+.metric-value {
+  font-size: 52px;
+  font-weight: 600;
+  color: #111111;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.metric-sub {
+  font-size: 15px;
+  color: #6e6e73;
+  margin-top: 6px;
+}
+.data-table {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.table-head {
+  display: grid;
+  grid-template-columns: 180px 1fr 200px 160px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+.table-row {
+  display: grid;
+  grid-template-columns: 180px 1fr 200px 160px;
+  font-size: 19px;
+  color: #2e2e2e;
+  align-items: baseline;
+  padding: 4px 0;
+}
+.table-row .id {
+  font-weight: 500;
+  color: #111111;
+  font-variant-numeric: tabular-nums;
+}
+.table-row .desc {
+  color: #2e2e2e;
+}
+.table-row .date {
+  color: #6e6e73;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+.table-row .val {
+  font-weight: 600;
+  color: #111111;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-meta">Collab Sans  /  04 In Use</div>
+  <div class="header-meta">Data &amp; Interface Legibility</div>
+</div>
+
+<div class="main">
+  <div class="section-title">Interface Typographic Hierarchy</div>
+
+  <div class="metrics-row">
+    <div>
+      <div class="metric-label">Monthly Processed</div>
+      <div class="metric-value">$482,950.00</div>
+      <div class="metric-sub">+14.2% monthly operational flow</div>
+    </div>
+    <div>
+      <div class="metric-label">Active Workflows</div>
+      <div class="metric-value">1,248</div>
+      <div class="metric-sub">99.98% runtime consistency</div>
+    </div>
+    <div>
+      <div class="metric-label">Automated Records</div>
+      <div class="metric-value">84,392</div>
+      <div class="metric-sub">Zero structural dropped frames</div>
+    </div>
+  </div>
+
+  <div class="data-table">
+    <div class="table-head">
+      <div>Record ID</div>
+      <div>Operational Workflow</div>
+      <div>Timestamp</div>
+      <div style="text-align: right;">Amount</div>
+    </div>
+    <div class="table-row">
+      <div class="id">#ORD-90241</div>
+      <div class="desc">Inventory Ledger Allocation</div>
+      <div class="date">2026-11-04 12:45</div>
+      <div class="val">$14,250.00</div>
+    </div>
+    <div class="table-row">
+      <div class="id">#BOM-48192</div>
+      <div class="desc">Multi-Tiered Assembly Run</div>
+      <div class="date">2026-11-04 12:30</div>
+      <div class="val">$8,940.50</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div>Tabular figures (`tnum`) preserve numerical column alignment</div>
+  <div>Optimized for data dashboards and financial systems</div>
+</div>
+</body>
+</html>
