@@ -44,23 +44,19 @@ Collab Sans is published under the [SIL Open Font License 1.1](OFL.txt) and is r
 
 ## Webfont Usage
 
-Include `collab-sans.css` in your HTML:
+Include Collab Sans directly in your HTML `<head>`:
 
 ```html
-<link rel="stylesheet" href="path/to/collab-sans.css">
+<link rel="preconnect" href="https://yugal.one">
+<link rel="stylesheet" href="https://yugal.one/collab-sans/collab-sans.css">
 ```
 
 Apply in CSS:
 
 ```css
-body {
-  font-family: 'Collab Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 400;
-}
-
-h1, h2, h3 {
-  font-family: 'Collab Sans', sans-serif;
-  font-weight: 700;
+:root {
+  font-family: 'Collab Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
 }
 ```
 
